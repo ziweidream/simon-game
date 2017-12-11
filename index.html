@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/babel" src="camper.js"></script>
+  <title>A Simon Game</title>
+</head>
+
+<body>
+  <img id="congratulation1" src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1511443825/fireworks1_v0c21s.jpg" width="279" height="186">
+  <img id="congratulation2" src="http://res.cloudinary.com/dbsgnowkn/image/upload/v1511443998/fireworks3_czwumg.jpg" width="247" height="165">
+  <div class="wrapper">
+    <div id="shell">
+      <div class="pad" id="part1">
+        <audio preload="auto" id="sound1" data-pad="1">
+          <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg"/>
+          <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/ogg"/>
+        </audio>
+      </div>
+
+      <div class="pad" id="part2">
+        <audio preload="auto" id="sound2" data-pad="2">
+          <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg"/>
+          <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/ogg"/>
+        </audio>
+      </div>
+
+      <div class="pad" id="part3">
+        <audio preload="auto" id="sound3" data-pad="3">
+          <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg"/>
+          <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/ogg"/>
+        </audio>
+      </div>
+
+      <div class="pad" id="part4">
+        <audio preload="auto" id="sound4" data-pad="4">
+          <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg"/>
+          <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/ogg"/>
+        </audio>
+      </div>
+
+      <div class="center wrapper text-center">
+        <div id="name">
+          <h1>SIMON</h1>
+        </div>
+        <div id="buttons" class="btn-group">
+          <i id="power" class="fa fa-power-off btn btn-md buttonCenter"></i>
+          <button id="strict" class="btn btn-md buttonCenter">strict</button>
+          <i id="start" class="btn btn-md buttonCenter"><span class="fa fa-play"></span></i> </div>
+        <div id="display">
+          <input id="count" type="text" class="btn btn-lg button">
+        </div>
+        <div class="wrong">
+          <audio preload="auto" id="sound5">
+              <source src="http://res.cloudinary.com/dbsgnowkn/video/upload/v1511444216/beep1_qv85iw.mp3" type="audio/mpeg"/>
+              <source src="http://res.cloudinary.com/dbsgnowkn/video/upload/v1511444216/beep1_qv85iw.mp3" type="audio/ogg"/>
+            </audio>
+        </div>
+        <div class="victory">
+          <audio preload="auto" id="sound6">
+              <source src="http://res.cloudinary.com/dbsgnowkn/video/upload/v1511444547/victory_spufn4.wav" type="audio/mpeg"/>
+              <source src="http://res.cloudinary.com/dbsgnowkn/video/upload/v1511444547/victory_spufn4.wav" type="audio/ogg"/>
+            </audio>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

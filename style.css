@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Russo+One");
+body {
+  background-color: #000;
+  font-family: Arial;
+  background-image: url("http://res.cloudinary.com/dbsgnowkn/image/upload/v1511444129/star3_x1bpkv.gif");
+}
+
+#congratulation1 {
+  position: absolute;
+  top: 70px;
+  left: 215px;
+}
+
+#congratulation2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.wrapper {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+#shell {
+  width: 500px;
+  height: 500px;
+  z-index: 0;
+  background-color: #999999;
+  border-radius: 300px;
+}
+
+.pad {
+  width: 230px;
+  height: 230px;
+  float: left;
+  z-index: 1;
+  margin: 10px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+#part1 {
+  border-top-left-radius: 300px;
+  background-color: green;
+}
+
+#part2 {
+  float: left;
+  border-top-right-radius: 300px;
+  background-color: red;
+  clear: right;
+}
+
+#part3 {
+  float: left;
+  border-bottom-left-radius: 300px;
+  background-color: yellow;
+  clear: left;
+}
+
+#part4 {
+  float: left;
+  border-bottom-right-radius: 300px;
+  background-color: blue;
+}
+
+.center {
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  width: 200px;
+  height: 200px;
+  background: #999999;
+  border-radius: 200px;
+  z-index: 10;
+  color: white;
+}
+
+#display {
+  margin-top: 25px;
+}
+
+#count {
+  width: 50px;
+  font-size: 26px;
+  text-align: center;
+  padding: 0;
+  color: #333333;
+  background-color: #b3b3b3;
+  opacity: 0.6;
+  border-radius: 15px;
+}
+
+.buttonCenter:focus {
+  outline: none;
+}
+
+#strict:focus {
+  outline: none;
+}
+
+#strict, #strict:hover {
+  background-position: 0px;
+  text-decoration: none;
+  color: white;
+}
+
+.buttonCenter, .buttonCenter:hover {
+  background-position: 0px;
+  text-decoration: none;
+  color: white;
+}
+
+#buttons {
+  margin-top: 15px;
+}
+
+#power {
+  margin-right: 5px;
+  height: 40px;
+  width: 40px;
+  padding-top: 10px;
+}
+
+#strict {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#start {
+  margin-left: 5px;
+  height: 40px;
+  width: 40px;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+#strict, #start, #power {
+  border-radius: 50%;
+  -moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 0.5);
+  text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+#name {
+  margin-top: 15px;
+  font-family: "Russo One", Arial;
+  font-size: 50px !important;
+  font-weight: bold;
+}
